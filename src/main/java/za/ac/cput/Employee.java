@@ -6,6 +6,11 @@ import java.util.Objects;
  * Author: Vuyisa Nkangana(218192215)
  */
 public class Employee {
+
+    /**
+     * This  program will demonstrate different methods for List, Set, Map and Collection
+     * ADP 3 Assignment 2
+     */
     private String firstName, lastName;
     private int employeeID;
     private Double Salary;
