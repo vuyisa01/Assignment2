@@ -18,7 +18,7 @@ public class EmployeeTest {
         DataAnalystList.add("Kungentando");
 
         for (int i = 0; i < DataAnalystList.size(); i++) {
-            System.out.println(DataAnalystList.get(i));
+            System.out.println("Employee: " + DataAnalystList.get(i));
         }
         assertEquals(3, DataAnalystList.size());
     }
@@ -31,7 +31,7 @@ public class EmployeeTest {
         DataAnalystList.add("Kungentando");
 
         boolean isremoved = DataAnalystList.remove("Sivuyile");
-        System.out.println(DataAnalystList);
+        System.out.println("remaing after remove" + DataAnalystList);
     }
 
     @Test
@@ -42,7 +42,7 @@ public class EmployeeTest {
         DataAnalystList.add("Sivuyile");
         DataAnalystList.add("Kungentando");
 
-        System.out.println(DataAnalystList.indexOf("Sivuyile"));
+        System.out.println("Employee found on index: " + DataAnalystList.indexOf("Sivuyile"));
 
     }
     //------------------------------- SET -----------------------------------------
@@ -54,7 +54,7 @@ public class EmployeeTest {
         DataAnalystSet.add(new Employee("Sivuyile", 2181923));
         DataAnalystSet.add(new Employee("Kungentando", 2181924));
 
-        System.out.println(DataAnalystSet);
+        System.out.println("Empolyee:" +DataAnalystSet);
         assertEquals(3,DataAnalystSet.size());
     }
 
@@ -67,7 +67,7 @@ public class EmployeeTest {
         DataAnalystSet.add("Kungentando");
 
         boolean isremoved = DataAnalystSet.remove("Kungentando");
-        System.out.println(DataAnalystSet);
+        System.out.println("Remaining employees after remove" + DataAnalystSet);
     }
 
     @Test
@@ -79,7 +79,7 @@ public class EmployeeTest {
         DataAnalystSet.add("Kungentando");
 
         DataAnalystSet.contains("Kungentando");
-        System.out.println(DataAnalystSet.contains("Kungentando"));
+        System.out.println("Employee found: " + DataAnalystSet.contains("Kungentando"));
     }
     //************************* MAP ***************************************
     @Test
@@ -90,7 +90,7 @@ public class EmployeeTest {
         DataAnalystMap.put("Kungentando", 2181923);
         DataAnalystMap.put("Sivuyile", 2181924);
 
-        System.out.println(DataAnalystMap);
+        System.out.println("Employees: " + DataAnalystMap);
         assertEquals(3, DataAnalystMap.size());
     }
 
@@ -103,7 +103,7 @@ public class EmployeeTest {
         DataAnalystMap.put(3,"Sivuyile");
         DataAnalystMap.remove(1);
 
-        System.out.println(DataAnalystMap);
+        System.out.println("Remaining employees:" + DataAnalystMap);
         assertEquals(2, DataAnalystMap.size());
     }
     @Test
@@ -126,7 +126,7 @@ public class EmployeeTest {
         DataAnalystCollection.add("Kungentando");
 
         for (int i = 0; i < 2; i++);
-        System.out.println(DataAnalystCollection);
+        System.out.println("Employees: " + DataAnalystCollection);
 
         assertEquals(3,DataAnalystCollection.size());
     }
@@ -140,7 +140,7 @@ public class EmployeeTest {
         DataAnalystCollection.remove("Kungentando");
 
         for (int i = 0; i < 2; i++) ;
-        System.out.println(DataAnalystCollection);
+        System.out.println("Employees after remove: " + DataAnalystCollection);
 
         assertEquals(2, DataAnalystCollection.size());
     }
@@ -152,7 +152,7 @@ public class EmployeeTest {
         DataAnalystCollection.add("Kungentando");
 
         DataAnalystCollection.contains("Kungentando");
-        System.out.println(DataAnalystCollection.contains("Kungentando"));
+        System.out.println("List contains employee: " + DataAnalystCollection.contains("Kungentando"));
     }
 
 }
