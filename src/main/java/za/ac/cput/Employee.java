@@ -1,5 +1,8 @@
 package za.ac.cput;
 
+/**
+ * Author: Vuyisa Nkangana(218192215)
+ */
 public class Employee {
     private String firstName, lastName;
     private int employeeID;
